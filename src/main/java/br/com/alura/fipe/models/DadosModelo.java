@@ -8,4 +8,8 @@ public record DadosModelo(
         @JsonAlias("codigo") String codigo,
         @JsonAlias("nome") String nome
 ) {
+    @Override
+    public String toString() {
+        return nome + " - [" + codigo + "]";
+    }
 }
